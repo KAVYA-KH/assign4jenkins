@@ -1,0 +1,27 @@
+pipeline{
+    agent any
+    stages{
+        stage('preperation'){
+            steps {
+                echo "preperation is started"
+                sleep 2
+                echo "done"
+            }
+        }
+        stage('Build'){
+            steps {
+                    echo "build started"
+                    sleep 2
+                    echo "done"
+            }
+        }
+        stage('test'){
+            steps {
+                    echo "test started"
+                    sleep 2
+                    echo "done"
+            }
+        }
+       
+     }
+}
